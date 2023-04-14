@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main>
+    <!--Card Display Header-->
+    <div class="left">
+      <div class="card-collect">
+        <div class="card front">
+          <img src="/images/bg-card-front.png" alt="" class="credit">
+          <img src="/images/card-logo.svg" alt="" id="card-hero">
+          <h1 id="cardnum">0000 0000 0000 0000</h1>
+          <div class="front-info">
+            <p id="cardname">Jane Appleseed</p>
+            <div class="carddate">
+              <p id="cardmonth">00</p><p>/</p><p id="cardyear">00</p>
+            </div>
+          </div>
+        </div>
+        <div class="card back">
+          <img src="images/bg-card-back.png" alt="" class="credit">
+          <div class="back-info">
+            <p id="cardsecure">000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Actual Input Form-->
+    <div class="right">
+      <form action="">
+        <div class="inputbox">
+          <label for="ccname">Cardholder Name</label>
+          <input type="text" name="ccname" id="ccname" placeholder="e.g. Jane Appleseed" required>
+          <p class="error">Cannot be empty</p>
+        </div>
+        <div class="inputbox">
+          <label for="ccnum">Card Number</label>
+          <input type="tel" name="ccnum" id="ccnum" oninput="if(this.value.length > this.maxlength) this.value.slice(0, this.maxlength)" maxlength="16" pattern="\d*" placeholder="e.g. 1234 5678 9123 0000" required>
+          <p class="error">Please enter correct format, numbers only</p>
+        </div>
+        <div class="ccleft">
+          <div class="infotitle">
+            <label for="ccmonth" id="exp">Exp. Date (MM/YY)</label>
+          </div>
+          <div class="inputbox">
+            <input type="tel" name="ccmonth" id="ccmonth" oninput="if(this.value.length > this.maxlength) this.value.slice(0, this.maxlength)" maxlength="2" placeholder="MM" required>
+            <input type="tel" name="ccyear" id="ccyear" oninput="if(this.value.length > this.maxlength) this.value.slice(0, this.maxlength)" maxlength="2" placeholder="YY" required>
+            <p class="error">Cannot be empty</p>
+          </div>
+        </div>
+        <div class="ccright">
+          <div class="securtitle">
+            <label for="ccvc">CVC</label>
+          </div>
+          <div class="inputbox">
+            <input type="tel" name="ccvc" id="ccvc" oninput="if(this.value.length > this.maxlength) this.value.slice(0, this.maxlength)" maxlength="3" placeholder="e.g. 123" required>
+            <p class="error">Cannot be empty</p>
+          </div>
+        </div>
+        <button type="submit" id="submit">Confirm</button>
+      </form> 
+      <div id="thankyou" class="complete">
+        <img src="/images/icon-complete.svg" alt="">
+        <h2 id="bigthanks">Thank you!</h2>
+        <p id="bigthanksp">We've added your card details</p>
+        <button id="continue">Continue</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
