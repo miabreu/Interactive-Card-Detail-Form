@@ -13,8 +13,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Key Takeaways](#key-takeways)
   - [Continued development](#continued-development)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -30,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="1522" alt="Screen Shot interactive card" src="https://user-images.githubusercontent.com/42332056/232140973-127ab0b9-a178-4fb2-bcb8-a64538206c7d.png">
 
 
 ### Links
