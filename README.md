@@ -50,7 +50,7 @@ Above is a preview of the web page that allows users to input and display inform
 ### Takeaways
 
 
-```
+```js
 const flipCard = document.querySelector(".flip-card");
 flipCard.addEventListener("click", function() {
   flipCard.classList.toggle("is-flipped");
@@ -62,7 +62,7 @@ This code adds an event listener to a HTML element with the class name "flip-car
 
 To further develop this website, I can add validation to the credit card form by validating user input on the client-side and server-side to ensure that credit card information is entered correctly and to prevent security vulnerabilities. To do this I can use JavaScript functions that validate the user's input, such as checking if the credit card number is valid or if the expiration date is in the future, add event listeners to the input fields to trigger the validation functions when the user interacts with the form, provide feedback to the user when their input is not valid, and prevent the form from being submitted to the server if the user's input is not valid:
 
-```
+```js
 const creditCardNumberInput = document.getElementById("credit-card-number");
 const expirationDateInput = document.getElementById("expiration-date");
 
